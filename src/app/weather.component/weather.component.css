@@ -1,0 +1,73 @@
+/* ---------- PAGE BACKGROUND ---------- */
+.weather-bg {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f172a, #020617);
+}
+
+/* ---------- HEADER ---------- */
+.weather-header {
+  background: linear-gradient(180deg, #1e293b, #0f172a);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 0;
+}
+
+/* ---------- WEATHER CARD ---------- */
+.weather-card {
+  background: rgba(31, 41, 55, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- INPUT ---------- */
+.weather-input {
+  background-color: #020617;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  border-radius: 10px;
+}
+
+.weather-input::placeholder {
+  color: #94a3b8;
+}
+
+.weather-input:focus {
+  background-color: #020617;
+  border-color: #64748b;
+  box-shadow: none;
+}
+
+/* ---------- BUTTON ---------- */
+.weather-btn {
+  background: linear-gradient(135deg, #94a3b8, #cbd5e1);
+  border: none;
+  color: #020617;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.weather-btn:hover {
+  background: linear-gradient(135deg, #cbd5e1, #e5e7eb);
+}
+
+/* ---------- TEXT ---------- */
+.weather-bg .text-muted {
+  color: #9ca3af !important;
+}
+
+.weather-bg small {
+  color: #94a3b8;
+}
+
+.weather-bg .fw-semibold {
+  color: #e5e7eb;
+}
+
+.weather-bg h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+}

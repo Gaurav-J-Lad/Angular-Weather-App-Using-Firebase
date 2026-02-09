@@ -1,0 +1,72 @@
+/* ---------- Background ---------- */
+.weather-bg {
+  background-color: #121a23; /* deep night blue */
+  position: relative;
+}
+
+/* ---------- App Title ---------- */
+.weather-title {
+  position: absolute;
+  top: 60px;
+  color: #e9ecef;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Card ---------- */
+.weather-card {
+  background-color: #1f2937; /* calm dark slate */
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid #374151;
+  max-width: 420px;
+  width: 100%;
+}
+
+/* ---------- Inputs ---------- */
+.weather-input {
+  background-color: #111827;
+  border: 1px solid #374151;
+  color: #e9ecef;
+  border-radius: 8px;
+}
+
+.weather-input::placeholder {
+  color: #9ca3af;
+}
+
+.weather-input:focus {
+  background-color: #111827;
+  color: #e9ecef;
+  border-color: #6b7280;
+  box-shadow: none;
+}
+
+/* ---------- Button ---------- */
+.weather-btn {
+  background-color: #adb5bd; /* soft grey */
+  border: none;
+  color: #111827;
+  border-radius: 10px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.weather-btn:hover {
+  background-color: #cbd5e1;
+  transform: translateY(-1px);
+}
+
+/* ---------- Link ---------- */
+.weather-link {
+  color: #9ca3af;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.weather-link:hover {
+  color: #e5e7eb;
+  text-decoration: underline;
+}

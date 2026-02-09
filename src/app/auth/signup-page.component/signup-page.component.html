@@ -1,0 +1,73 @@
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center weather-bg">
+  <!-- App Title -->
+  <h2 class="weather-title mb-4 text-center">☁️ Weather Forecast</h2>
+  <!-- Card -->
+  <div class="weather-card">
+    <div class="card-body p-4">
+      <!-- Title -->
+      <h3 class="text-center fw-bold mb-2 text-white">Create Account</h3>
+      <p class="text-center text-light mb-4 fw-semibold">Start checking weather updates</p>
+
+      <!-- FORM -->
+      <form [formGroup]="signupForm" (ngSubmit)="signup()">
+        <!-- Email -->
+        <div class="mb-3">
+          <label class="form-label text-light fw-semibold fs-4">Email</label>
+          <input
+            type="email"
+            class="form-control weather-input"
+            placeholder="you@example.com"
+            formControlName="email"
+          />
+
+          @if (signupForm.controls['email'].touched && signupForm.controls['email'].invalid) {
+            <small class="text-warning">Valid email is required</small>
+          }
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label class="form-label text-light fw-semibold fs-4">Password</label>
+          <input
+            type="password"
+            class="form-control weather-input"
+            placeholder="Minimum 6 characters"
+            formControlName="password"
+          />
+
+          @if (signupForm.controls['password'].touched && signupForm.controls['password'].invalid) {
+            <small class="text-warning"> Password must be at least 6 characters </small>
+          }
+        </div>
+
+        <!-- Error -->
+        @if (errorMessage) {
+          <div class="alert alert-danger py-2">
+            {{ errorMessage }}
+          </div>
+        }
+
+        <!-- Submit -->
+        <div class="d-grid mt-3">
+          <button
+            class="btn weather-btn btn-lg fw-semibold fs-5"
+            type="submit"
+            [disabled]="signupForm.invalid"
+          >
+            Create Account
+          </button>
+        </div>
+      </form>
+
+      <!-- Login -->
+      <div class="text-center mt-4">
+        <small class="text-light fw-semibold fs-5">
+          Already have an account?
+          <a routerLink="/login" class="weather-link">Login</a>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
