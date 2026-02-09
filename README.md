@@ -50,7 +50,7 @@ The app provides protected routing, real-time weather data fetching, and a smoot
 ## 🌐 Live Demo
 
 🌐 **Netlify Live Demo:**  
-👉 https://angular-weather-app-firebase.netlify.app
+👉 https://my-angular-weather-app-using-firebase.netlify.app
 
 ---
 
